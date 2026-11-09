@@ -7,7 +7,7 @@ abren WhatsApp con un mensaje ya escrito según la pieza.
 Edita solo `js/config.js`: nombre del negocio, número de WhatsApp (con código de país,
 sin signos, ej. `50255550000`), teléfono visible y dirección.
 
-> El número actual es **de ejemplo**.
+> Número actual: +502 4725 4199.
 
 ## Fotos
 Fotos de joyas con licencia abierta (CC BY / dominio público) vía Openverse; los créditos

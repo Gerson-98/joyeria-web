@@ -4,8 +4,8 @@
 window.NEGOCIO = {
   nombre: 'Joyería',
   // WhatsApp con código de país y sin signos ni espacios (Guatemala = 502).
-  // NÚMERO DE EJEMPLO: reemplázalo por el del cliente.
-  whatsapp: '50255550000',
-  telefonoVisible: '+502 5555 0000',
+  // Número del cliente.
+  whatsapp: '50247254199',
+  telefonoVisible: '+502 4725 4199',
   direccion: 'Ciudad de Guatemala',
 };
