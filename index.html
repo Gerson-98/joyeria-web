@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joyería — Alta joyería, oro y diamantes</title>
+  <meta name="description" content="Anillos de compromiso, argollas, aretes y piezas a medida. Atención personalizada por WhatsApp." />
+  <meta name="theme-color" content="#0a0a0c" />
+  <meta property="og:title" content="Joyería — Alta joyería, oro y diamantes" />
+  <meta property="og:description" content="Piezas únicas en oro y diamantes. Cotiza por WhatsApp." />
+  <meta property="og:image" content="img/anillo-oscuro.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <!-- Pantalla de entrada -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__marca">
+      <svg viewBox="0 0 64 64" class="loader__gema"><path d="M12 24 L22 12 H42 L52 24 L32 54 Z M12 24 H52 M22 12 L28 24 L32 54 L36 24 L42 12" /></svg>
+      <span data-nombre>Joyería</span>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__logo">
+      <svg viewBox="0 0 64 64" class="nav__gema"><path d="M12 24 L22 12 H42 L52 24 L32 54 Z M12 24 H52 M22 12 L28 24 L32 54 L36 24 L42 12" /></svg>
+      <span data-nombre>Joyería</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#colecciones">Colecciones</a>
+      <a href="#piezas">Piezas</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#opiniones">Clientes</a>
+    </nav>
+    <a class="btn btn--mini" data-wa data-msg="Hola, quisiera información sobre sus joyas.">
+      <span>WhatsApp</span>
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Menú"><i></i><i></i></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__fondo"><img src="img/anillo-oscuro.jpg" alt="Anillo de oro con diamante sobre fondo oscuro" /></div>
+      <div class="hero__velo"></div>
+      <canvas class="hero__chispas" id="chispas"></canvas>
+      <div class="hero__contenido">
+        <p class="eyebrow reveal">Alta joyería · Hecha a mano</p>
+        <h1 class="hero__titulo">
+          <span class="linea"><span>El brillo</span></span>
+          <span class="linea"><span>que <em>merece</em></span>
+          <span class="linea"><span>ser recordado.</span></span>
+        </h1>
+        <p class="hero__texto reveal">Oro, diamantes y piedras selectas, trabajados para los momentos que no se repiten.</p>
+        <div class="hero__acciones reveal">
+          <a class="btn btn--oro magnetico" data-wa data-msg="Hola, quiero cotizar una joya. ¿Me pueden asesorar?"><span>Cotizar por WhatsApp</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--linea" href="#colecciones"><span>Ver colecciones</span></a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#colecciones" aria-label="Bajar"><span></span></a>
+    </section>
+
+    <!-- CINTA -->
+    <div class="cinta" aria-hidden="true">
+      <div class="cinta__pista">
+        <span>Oro 18k</span><i>◆</i><span>Diamantes certificados</span><i>◆</i><span>Diseño a medida</span><i>◆</i><span>Garantía de por vida</span><i>◆</i><span>Grabado personalizado</span><i>◆</i>
+        <span>Oro 18k</span><i>◆</i><span>Diamantes certificados</span><i>◆</i><span>Diseño a medida</span><i>◆</i><span>Garantía de por vida</span><i>◆</i><span>Grabado personalizado</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- COLECCIONES -->
+    <section class="seccion" id="colecciones">
+      <header class="seccion__cabeza">
+        <p class="eyebrow reveal">Colecciones</p>
+        <h2 class="titulo reveal">Cada pieza, una <em>promesa</em></h2>
+      </header>
+      <div class="colecciones">
+        <a class="col col--alta reveal" data-wa data-msg="Hola, me interesan los anillos de compromiso. ¿Me muestran opciones?">
+          <img class="recorte" src="img/anillo-oro-diamante.jpg" alt="Anillo de compromiso en oro con diamante" loading="lazy" />
+          <div class="col__info"><span class="col__num">01</span><h3>Compromiso</h3><p>Solitarios y alianzas</p><span class="col__cta">Consultar <b>→</b></span></div>
+        </a>
+        <a class="col reveal" data-wa data-msg="Hola, quisiera cotizar argollas de matrimonio.">
+          <img src="img/argollas.jpg" alt="Argollas de matrimonio" loading="lazy" />
+          <div class="col__info"><span class="col__num">02</span><h3>Argollas</h3><p>Para toda la vida</p><span class="col__cta">Consultar <b>→</b></span></div>
+        </a>
+        <a class="col col--alta reveal" data-wa data-msg="Hola, me interesan unos aretes. ¿Qué modelos tienen?">
+          <img src="img/aretes-luna.jpg" alt="Aretes de oro con piedra luna" loading="lazy" />
+          <div class="col__info"><span class="col__num">03</span><h3>Aretes</h3><p>Luz en movimiento</p><span class="col__cta">Consultar <b>→</b></span></div>
+        </a>
+        <a class="col reveal" data-wa data-msg="Hola, quisiera ver pulseras y collares.">
+          <img src="img/pulsera-oro.jpg" alt="Pulsera de oro" loading="lazy" />
+          <div class="col__info"><span class="col__num">04</span><h3>Pulseras y collares</h3><p>Oro y perlas selectas</p><span class="col__cta">Consultar <b>→</b></span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- PIEZAS -->
+    <section class="seccion seccion--oscura" id="piezas">
+      <header class="seccion__cabeza">
+        <p class="eyebrow reveal">Piezas destacadas</p>
+        <h2 class="titulo reveal">Hechas para <em>deslumbrar</em></h2>
+        <p class="seccion__sub reveal">Toca una pieza y te la enviamos por WhatsApp con precio y disponibilidad.</p>
+      </header>
+      <div class="galeria">
+        <a class="pieza reveal" data-wa data-msg="Hola, me interesa el diamante talla princesa. ¿Precio y disponibilidad?"><img src="img/diamante-princesa.jpg" alt="Diamante talla princesa" loading="lazy" /><span>Diamante princesa</span></a>
+        <a class="pieza pieza--alta reveal" data-wa data-msg="Hola, me interesa el anillo de oro blanco. ¿Precio y disponibilidad?"><img src="img/anillo-oro-blanco.jpg" alt="Anillo de oro blanco con diamante" loading="lazy" /><span>Oro blanco</span></a>
+        <a class="pieza reveal" data-wa data-msg="Hola, me interesa el anillo con zafiro. ¿Precio y disponibilidad?"><img src="img/zafiro-oro.jpg" alt="Anillo de oro con zafiro" loading="lazy" /><span>Zafiro y oro</span></a>
+        <a class="pieza pieza--alta reveal" data-wa data-msg="Hola, me interesa el collar de perlas. ¿Precio y disponibilidad?"><img src="img/perlas.jpg" alt="Collar de perlas" loading="lazy" /><span>Perlas</span></a>
+        <a class="pieza reveal" data-wa data-msg="Hola, me interesa el anillo de alejandrita. ¿Precio y disponibilidad?"><img src="img/alejandrita.jpg" alt="Anillo con piedra violeta" loading="lazy" /><span>Alejandrita</span></a>
+        <a class="pieza pieza--alta reveal" data-wa data-msg="Hola, me interesan los aretes azules. ¿Precio y disponibilidad?"><img src="img/aretes-azules.jpg" alt="Aretes con gotas azules" loading="lazy" /><span>Aretes azul noche</span></a>
+        <a class="pieza reveal" data-wa data-msg="Hola, me interesa la pulsera de brillantes. ¿Precio y disponibilidad?"><img src="img/pulsera-brillantes.jpg" alt="Pulsera con brillantes" loading="lazy" /><span>Pulsera de brillantes</span></a>
+        <a class="pieza reveal" data-wa data-msg="Hola, me interesa el anillo con zafiro marquesa. ¿Precio y disponibilidad?"><img src="img/anillo-zafiro.jpg" alt="Anillo con zafiro marquesa" loading="lazy" /><span>Zafiro marquesa</span></a>
+      </div>
+    </section>
+
+    <!-- ATELIER -->
+    <section class="atelier" id="atelier">
+      <div class="atelier__img"><img src="img/argollas-oro.jpg" alt="Argollas de oro trabajadas a mano" loading="lazy" data-parallax /></div>
+      <div class="atelier__texto">
+        <p class="eyebrow reveal">El atelier</p>
+        <h2 class="titulo reveal">Oficio, paciencia y <em>una sola pieza a la vez</em></h2>
+        <p class="reveal">Cada joya nace de una conversación contigo. Elegimos el oro, seleccionamos la piedra y la trabajamos a mano hasta que se sienta tuya.</p>
+        <div class="cifras reveal">
+          <div><b data-cuenta="15">0</b><span>años de oficio</span></div>
+          <div><b data-cuenta="2400" data-mas>0</b><span>clientes felices</span></div>
+          <div><b data-cuenta="100" data-sufijo="%">0</b><span>oro garantizado</span></div>
+        </div>
+        <a class="btn btn--oro magnetico reveal" data-wa data-msg="Hola, quiero diseñar una joya a medida."><span>Diseñar mi joya</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="seccion" id="servicios">
+      <header class="seccion__cabeza">
+        <p class="eyebrow reveal">Servicios</p>
+        <h2 class="titulo reveal">Más que una <em>compra</em></h2>
+      </header>
+      <div class="servicios">
+        <article class="serv reveal"><svg viewBox="0 0 48 48"><path d="M24 6 L40 18 L24 42 L8 18 Z M8 18 H40"/></svg><h3>Diseño a medida</h3><p>Tu idea, dibujada y fabricada en oro y piedras a tu elección.</p></article>
+        <article class="serv reveal"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M16 24 l6 6 l11 -12"/></svg><h3>Certificado de autenticidad</h3><p>Toda pieza incluye su certificado de oro y de piedras.</p></article>
+        <article class="serv reveal"><svg viewBox="0 0 48 48"><path d="M10 34 L30 14 L36 20 L16 40 H10 Z M27 17 L33 23"/></svg><h3>Grabado y reparación</h3><p>Fechas, nombres y restauración de joyas de familia.</p></article>
+        <article class="serv reveal"><svg viewBox="0 0 48 48"><path d="M24 6 L38 12 V24 C38 33 31 40 24 43 C17 40 10 33 10 24 V12 Z"/></svg><h3>Garantía de por vida</h3><p>Limpieza y revisión sin costo para que brille siempre.</p></article>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="seccion seccion--oscura" id="opiniones">
+      <header class="seccion__cabeza">
+        <p class="eyebrow reveal">Clientes</p>
+        <h2 class="titulo reveal">Lo que dicen <em>de nosotros</em></h2>
+      </header>
+      <div class="opiniones reveal" id="opiniones-caja">
+        <blockquote class="op op--activa"><p>“Pedí mi anillo de compromiso por WhatsApp y en una semana lo tenía en mis manos. Mi esposa lloró de la emoción.”</p><cite>Carlos M.</cite></blockquote>
+        <blockquote class="op"><p>“Atención impecable. Me asesoraron con el presupuesto y el resultado superó lo que esperaba.”</p><cite>Andrea R.</cite></blockquote>
+        <blockquote class="op"><p>“Restauraron el collar de mi abuela. Quedó como nuevo y conservó todo su valor sentimental.”</p><cite>Lucía G.</cite></blockquote>
+        <div class="op__puntos" id="opPuntos"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta__fondo"><img src="img/diamante-princesa.jpg" alt="" loading="lazy" data-parallax /></div>
+      <div class="cta__contenido">
+        <p class="eyebrow reveal">Atención privada</p>
+        <h2 class="titulo titulo--grande reveal">Agenda tu <em>cita</em></h2>
+        <p class="reveal">Escríbenos y un asesor te atiende de forma personal, sin compromiso.</p>
+        <a class="btn btn--oro btn--grande magnetico reveal" data-wa data-msg="Hola, quisiera agendar una cita privada para ver sus joyas."><svg class="wa" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5Zm-8.5 17a9.1 9.1 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3A9.1 9.1 0 1 1 12 20.5Zm5-6.8c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.5a.5.5 0 0 0 0-.5l-.9-2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3Z"/></svg><span>Escribir por WhatsApp</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__fila">
+      <div class="pie__marca"><span data-nombre>Joyería</span><p>Alta joyería, oro y diamantes.</p></div>
+      <div class="pie__col"><h4>Contacto</h4><a data-wa data-msg="Hola, quisiera información.">WhatsApp: <span data-telefono></span></a><span data-direccion>Guatemala</span><span>Lun – Sáb · 9:00 a 18:00</span></div>
+      <div class="pie__col"><h4>Explorar</h4><a href="#colecciones">Colecciones</a><a href="#piezas">Piezas</a><a href="#servicios">Servicios</a></div>
+    </div>
+    <p class="pie__legal">© <span id="anio"></span> <span data-nombre>Joyería</span>. Todos los derechos reservados. · <a href="CREDITOS.md">Créditos de fotografías (CC BY / dominio público, vía Openverse)</a></p>
+  </footer>
+
+  <a class="wa-flotante" data-wa data-msg="Hola, quisiera información sobre sus joyas." aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5Zm-8.5 17a9.1 9.1 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3A9.1 9.1 0 1 1 12 20.5Zm5-6.8c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.5a.5.5 0 0 0 0-.5l-.9-2c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.900 11.900 0 0 0 4.600 4.100c1.700.7 2.400.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3Z"/></svg>
+    <span class="wa-flotante__txt">Escríbenos</span>
+  </a>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
